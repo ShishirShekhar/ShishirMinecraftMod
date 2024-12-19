@@ -30,9 +30,6 @@ public class ShishirMod {
         // Register the commonSetup method for mod loading
         modEventBus.addListener(this::commonSetup);
 
-        // Register ourselves for server and other game events we are interested in
-        MinecraftForge.EVENT_BUS.register(this);
-
         // Register the deferred register for items
         ModItems.register(modEventBus);
 
@@ -42,6 +39,9 @@ public class ShishirMod {
         // Register our mod's ForgeConfigSpec so that Forge can create and load the
         // config file for us
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
+        // Register ourselves for server and other game events we are interested in
+        MinecraftForge.EVENT_BUS.register(this);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
