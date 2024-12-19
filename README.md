@@ -1,26 +1,31 @@
-# Template Mod
+# Shishir's Minecraft Mod
 
-Welcome to the **Template Mod** project! This is a Forge-based Minecraft mod designed as a starting template for mod development.
+Welcome to the **Shishir's Minecraft Mod** project! This is a Forge-based Minecraft mod that introduces custom items to enhance your gameplay.
+
+---
 
 ## Project Overview
 
-- **Mod ID**: `templatemod`
-- **Mod Name**: Template Mod
-- **Version**: `0.0.1-1.21.4`
+- **Mod ID**: `shishirmod`
+- **Mod Name**: Shishir's Minecraft Mod
+- **Version**: `0.1.0-1.21.4`
 - **Minecraft Version**: `1.21.4`
 - **Forge Version**: `54.0.6`
-- **License**: All Rights Reserved
+- **License**: MIT License
 - **Author**: Shishir Shekhar
 
-This mod provides a foundational setup for creating a Minecraft mod using Forge. It includes necessary configurations, a basic structure, and is ready for customization.
+This mod adds new items, including "Shishirrite" and "Raw Shishirrite," designed to provide players with new crafting materials and exciting gameplay opportunities.
 
 ---
 
 ## Features
 
-- Pre-configured Forge MDK setup.
-- Example mod structure.
-- Predefined build scripts and mappings.
+- **Custom Items**:
+  - *Shishirrite*: A rare and powerful material for advanced crafting.
+  - *Raw Shishirrite*: The unrefined version of Shishirrite, obtained through mining.
+
+- **Creative Mode Integration**:
+  - Items are added to the "Ingredients" tab in Creative Mode.
 
 ---
 
@@ -39,8 +44,8 @@ Ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/ShishirShekhar/Minecraft-Mod-Template.git
-   cd Minecraft-Mod-Template
+   git clone https://github.com/ShishirShekhar/ShishirMinecraftMod.git
+   cd ShishirMinecraftMod
    ```
 
 2. Import the project into your preferred IDE:
@@ -65,11 +70,11 @@ Ensure you have the following installed:
 
 ## Project Structure
 
-``` bash
+```bash
 src/
 ├── main/
 │   ├── java/                # Main Java source files.
-│   │   └── net.shishirshekhar.templatemod/
+│   │   └── net/shishirshekhar/shishirmod/
 │   ├── resources/           # Assets and data files.
 │   │   ├── META-INF/        # Mod metadata.
 │   │   ├── assets/          # Mod textures, models, and localization.
@@ -81,25 +86,20 @@ settings.gradle              # Gradle settings file.
 
 ---
 
-## Troubleshooting
-
-### Common Issues
-
-1. **Access Denied Errors**: Ensure you have proper permissions for all directories.
-2. **Build Errors**: Verify your JDK version and Gradle version.
-3. **Run Issues**: Ensure your Minecraft version matches the mod and Forge version.
-
----
-
 ## Contribution Guidelines
 
-Contributions are welcome! Please fork the repository and submit a pull request for review. Ensure your code adheres to project guidelines.
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.  
+2. Create a feature branch for your changes.  
+3. Commit your updates with clear and descriptive messages.  
+4. Open a pull request for review and inclusion.  
 
 ---
 
 ## License
 
-This mod is licensed under **All Rights Reserved**. For more details, review the `LICENSE` file.
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -107,11 +107,17 @@ This mod is licensed under **All Rights Reserved**. For more details, review the
 
 Special thanks to:
 
-- The **Minecraft Forge** team for their tools and libraries.
-- The open-source Minecraft community for their support and tutorials.
+- The **Minecraft Forge** team for providing modding tools and support.
+- The Minecraft modding community for tutorials and inspiration.
 
 ---
 
 ## Contact
 
-For any inquiries, you can reach me at [sspdav02@gamil.com].
+For any inquiries, please open an issue in this repository or email me at [sspdav02@gmail.com].
+
+---
+
+*Note: This mod is under active development, and new features will be added in future updates. Stay tuned!*
+
+This `README.md` is designed to provide a comprehensive overview of your project while remaining clear and professional.
