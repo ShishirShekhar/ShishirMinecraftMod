@@ -2,6 +2,9 @@ package net.shishirshekhar.shishirmod.item;
 
 import net.shishirshekhar.shishirmod.ShishirMod;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -14,10 +17,14 @@ public class ModItems {
 
     // Register the item
     public static final RegistryObject<Item> SHISHIRRITE = ITEMS.register("shishirrite",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().setId(
+                ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(ShishirMod.MODID, "shishirrite"))
+            )));
 
     public static final RegistryObject<Item> RAW_SHISHIRRITE = ITEMS.register("raw_shishirrite",
-            () -> new Item(new Item.Properties()));
+            () -> new Item(new Item.Properties().setId(
+                ResourceKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(ShishirMod.MODID, "raw_shishirrite"))
+            )));
 
     // Register the deferred register
     public static void register(IEventBus eventBus) {
